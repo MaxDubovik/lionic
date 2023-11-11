@@ -131,6 +131,15 @@ img {
   margin-right: 35px;
 }
 
+.section-clients-user {
+  display: flex;
+  align-items: center;
+}
+
+.section-clients-avatar {
+  margin-right: 15px;
+}
+
 .section-contacts {
   padding-top: 70px;
   padding-bottom: 170px;
@@ -147,11 +156,30 @@ img {
 }
 
 .section-contacts-icon {
-  margin-bottom: 20px;
+  display: block;
+  height: 26px;
+  margin-bottom: 25px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: auto 100%;
+  background-color: transparent;
+}
+
+.section-contacts-icon-gps {
+  background-image: url('/img/gps.svg');
+}
+
+.section-contacts-icon-phone {
+  background-image: url('/img/phone.svg');
+}
+
+.section-contacts-icon-mail {
+  background-image: url('/img/mail.svg');
+  background-size: auto 19px;
 }
 
 .section-contacts-text {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .footer {
