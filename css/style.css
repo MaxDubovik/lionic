@@ -29,6 +29,7 @@ img {
 }
 
 .btn {
+  display: inline-block;
   padding: 15px 16px;
   background-color: #3172b9;
   color: white;
@@ -40,6 +41,9 @@ img {
   cursor: pointer;
 }
 
+.text-center {
+  text-align: center;
+}
 .header {
   height: 100px;
 }
@@ -64,4 +68,130 @@ img {
 
 .header-btn {
   margin-left: 80px;
+}
+
+.hero-container {
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.section-hero-heading {
+  margin-bottom: 20px;
+}
+
+.section-hero-description {
+  margin-bottom: 30px;
+}
+
+.section-hero-btn-description {
+  margin-top: 10px;
+}
+
+.section-do {
+  padding-top: 140px;
+  padding-bottom: 190px;
+}
+
+.section-description {
+  margin-top: 25px;
+}
+
+.section-do-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.section-do-item {
+  flex: 1 1 25%;
+}
+
+.section-do-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-clients {
+  padding-top: 90px;
+  padding-bottom: 160px;
+}
+
+.section-clients-list {
+  display: flex;
+  margin-top: 40px;
+}
+
+.section-clients-item {
+  flex: 1 1 33%;
+}
+
+.section-clients-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.section-contacts {
+  padding-top: 70px;
+  padding-bottom: 170px;
+}
+
+.section-heading-list {
+  display: flex;
+  margin-top: 100px;
+}
+
+.section-contacts-item {
+  flex: 1 1 33%;
+  margin-right: 190px;
+}
+
+.section-contacts-icon {
+  margin-bottom: 20px;
+}
+
+.section-contacts-text {
+  margin-top: 50px;
+}
+
+.footer {
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 20px;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav-item {
+  margin-right: 30px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 30px;
 }
