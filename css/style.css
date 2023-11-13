@@ -2,8 +2,40 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-display: swap;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/MullerLight.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MullerRegular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/MullerMedium.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/MullerBold.woff2') format('woff2'); 
+}
+
 html {
-  font-family: sans-serif;
+  font-family: 'Muller', sans-serif;
 }
 
 a {
@@ -30,20 +62,26 @@ img {
 
 .btn {
   display: inline-block;
-  padding: 15px 16px;
+  padding: 15px 30px;
   background-color: #3172b9;
   color: white;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
   border-radius: 4px;
   cursor: pointer;
 }
 
+.btn.btn-big {
+  padding: 20px 60px;
+}
+
 .text-center {
   text-align: center;
 }
+
+/* HEADER */
 .header {
   height: 100px;
 }
@@ -51,15 +89,26 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
-}
-
-.logo {
-  margin-right: auto;
 }
 
 .nav-list {
   display: flex;
+  margin: auto;
+}
+
+.nav-item {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.nav-link {
+  color: #1c1c1c;
+}
+
+.nav-item.is-active .nav-link {
+  color: #3172b9;
 }
 
 .nav-item:not(:last-child) {
@@ -67,7 +116,12 @@ img {
 }
 
 .header-btn {
-  margin-left: 80px;
+  margin-left: 40px;
+}
+
+/* HERO */
+.section-hero {
+  background: url('../img/background.jpg') right center no-repeat white;
 }
 
 .hero-container {
@@ -80,15 +134,44 @@ img {
 }
 
 .section-hero-heading {
-  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 300;
+  margin-top: 0px;
+  color: #1c1c1c;
 }
 
 .section-hero-description {
   margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #787878;
 }
 
 .section-hero-btn-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
+  font-size: 11px;
+  line-height: 1;
+  color: #787878;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-hero-action {
+  display: inline-block;
+}
+
+.section-hero-ssl-icon {
+  display: inline-block;
+  width: 13px;
+  height: 17px;
+  background: url('../img/shield.svg') center center no-repeat transparent;
+  background-size: contain;
+  margin-right: 10px;
+  transform: translateY(-1px);
 }
 
 .section-do {
